@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Happy Ending</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="The Corporation Of Ahsan_4">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		<meta name="author" content="Ahsan Jawed">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Stylesheets start here -->
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/normalize.css"  />
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css"  />
+		<link rel="stylesheet" href="assets/css/Material_Icons.css"  />
+		<link rel="stylesheet" href="assets/css/font-awesome.css"  />
+		<link rel="stylesheet" href="assets/css/flexslider.css"  />
+		<link rel="stylesheet" href="assets/css/style.css"  />
+		<script src="https://kit.fontawesome.com/3e5c8428f6.js" crossorigin="anonymous"></script>
+		<!-- Stylesheets end here -->
+		<style>
+			.flex {
+				display:flex;
+				flex-direction:column;
+				flex-wrap:wrap;
+				position:fixed;
+				top:60px;
+				left:10px;
+				z-index:1;
+				
+			}
+			.flex1 {background:#3b5998;transition:background 2s;}
+			.flex2 {background:#00acee;}
+			.flex3 {background:#f2003c;}
+			.flex4 {background:#7f1734;}
+			.flex5 {background:#3b5998;}
+			
+			.flex1:hover {
+				background:black;
+			}
+			@media only screen and (max-width:768px) {
+				.flex {
+					display:none;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<!--header Section starts here -->
+		<nav class="navbar navbar-expand-lg navbar-expand-md spice-nav">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="index.html"><i class="fas fa-map-marker-alt spice-logo"></i><h5 class="navbar-text ml-2 spice-logo-text">Spice</h5></a>
+				<button class="navbar-toggler spice-toggler" type="button" data-toggle="collapse" data-target="#spice-toggle-id" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="spice-toggle-id">
+					<ul class="navbar-nav nav-ul" id="nav-ul-id">
+						<li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+						<li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+						<li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+						<li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+						<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+					</ul>
+					<!-- Button trigger modal -->
+					<button type="button" class="btn" data-toggle="modal" data-target="#staticBackdrop">
+					  <i class="fas fa-search spice-form-icon"></i>
+					</button>
+
+					<!-- Modal -->
+					<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+					  <div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+						  <div class="modal-header spice-model-header">
+							<h3 class="modal-title spice-modal-title" id="staticBackdropLabel">Search Form</h3>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							  <i class="fas fa-times-circle text-light mt-2"></i>
+							</button>
+						  </div>
+						  <!--Modal Body-->
+						  <div class="modal-body">
+							<div class="container p-2">
+							  <form role="search" method="get" class="form search-form" action="/index.php">
+							<div class="input-group">
+								  <input name="s" type="text" class="form-control" placeholder="Search here">
+								  <span class="input-group-btn">
+									<button type="submit" value="Search" class="btn" type="button"><i class="fa fa-search spice-search-icon" aria-hidden="true"></i>&nbsp;</button>
+								  </span>
+								</div>
+								</form>
+							</div>
+						  </div>
+						  <!--Modal Body-->
+						  <div class="modal-footer">
+							<button type="button" class="btn spice-form-close-button text-light" data-dismiss="modal">Close</button>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!--header Section ends here -->
+		
+		
+		<!--FlexSlider Start here-->
+		<div class="flexslider" id="f1">
+		  <ul class="slides">
+			<li>
+			  <img src="assets/images/slides/1.jpg" class="img-fluid" alt="Responsive image">
+			  <div class="flex-caption">
+				<h1 class="flex-heading">HAPPY DINING!</h1>
+			  </div>
+			</li>
+			<li>
+			  <img src="assets/images/slides/2.jpg" class="img-fluid" alt="Responsive image">
+			  <div class="flex-caption">
+				<h1 class="flex-heading">TASTY FOOD</h1>
+			  </div>
+			</li>
+			<li>
+			  <img src="assets/images/slides/3.png" class="img-fluid" alt="Responsive image">
+			  <div class="flex-caption">
+				<h1 class="flex-heading">TASTY FOOD</h1>
+			  </div>
+			</li>
+			<li>
+			  <img src="assets/images/slides/4.png" class="img-fluid" alt="Responsive image">
+			  <div class="flex-caption">
+				<h1 class="flex-heading">TASTY FOOD</h1>
+			  </div>
+			</li>
+			<li>
+			  <img src="assets/images/slides/5.png" class="img-fluid" alt="Responsive image">
+			  <div class="flex-caption">
+				<h1 class="flex-heading">TASTY FOOD</h1>
+			  </div>
+			</li>
+		  </ul>
+		</div>
+		<!--
+			<div class="flex">
+				<div class="flex1 p-2 mb-2 text-light">icon1</div>
+				<div class="flex2 p-2 mb-2 text-light">icon2</div>
+				<div class="flex3 p-2 mb-2 text-light">icon3</div>
+				<div class="flex4 p-2 mb-2 text-light">icon4</div>
+				<div class="flex5 p-2 mb-2 text-light">icon5</div>
+			</div>-->
+		<!-- <div class="custom-navigation"> -->
+		  <!-- <a href="#" class="flex-prev">Prev</a> -->
+		  <!-- <div class="custom-controls-container"></div> -->
+		  <!-- <a href="#" class="flex-next">Next</a> -->
+		<!-- </div> -->
+		<!--FlexSlider end here-->
+		
+		
+		<!--Dishes section starts here-->
+		<section class="dishes-section">
+			<div class="container dishes-container-heading-and-text">
+				<div class="row dishes-row-heading-and-text">
+					<div class="col-md-12 dishes-col-heading-and-text">
+						<h2 class="text-center dishes-heading mb-4">SIGNATURE DISHES</h2>
+						<p class="text-center dishes-para mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt eius magni provident,
+						doloribus omnis minus ovident, doloribus omnis minus temporibus perferendis nesciunt..</p>
+					</div>
+				</div>
+			</div>
+			<div class="container dishes-container">
+				<div class="row dishes-row justify-content-between">
+					<div class="col-md-4  mb-4 dishes-card-1">
+						<div class="card">
+							<img class="img-responsive dishes-img" src="assets/images/service1.jpg" alt="assets/images/service1"  />
+							<h3 class="dishes-card-title">Cobb Salad</h3>
+							<p class="text-justify dishes-card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12 mb-4 dishes-card-1">
+						<div class="card">
+							<img class="img-responsive" src="assets/images/service2.jpg" alt="service1"  />
+							<h3 class="dishes-card-title">Twinkies</h3>
+							<p class="text-justify dishes-card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt</p>
+						</div>
+					</div>
+					<div class="col-md-4 col-12 mb-4 dishes-card-1">
+						<div class="card">
+							<img class="img-responsive" src="assets/images/service3.jpg" alt="service1"  />
+							<h3 class="dishes-card-title">Pot roast</h3>
+							<p class="text-justify dishes-card-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--Dishes section end here-->
+		
+		
+		<!--Services Section  starts here-->
+		<section class="services-section" id="offer-section">
+			<div class="container services-container-heading-and-text">
+				<div class="row services-row-heading-and-text">
+					<div class="col-md-12 services-col-heading-and-text">
+						<h2 class="text-center services-heading mb-4">WE OFFER</h2>
+						<p class="text-center services-para mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt eius magni provident,
+						doloribus omnis minus ovident, doloribus omnis minus temporibus perferendis nesciunt..</p>
+					</div>
+				</div>
+			</div>
+						<div class="container p-4">
+				<div class="row">
+					<div class="col-lg-4 col-md-6 col-12 p-2 mb-3">
+						<i class="fas fa-mug-hot fa-3x services-icons"></i>
+						<div class="services-col">
+							<h3 style="color:#202020;">Coffee</h3>
+							<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt</p>
+						</div>
+					</div>
+					
+					<div class="col-lg-4 col-md-6 col-12 p-2 mb-3">
+						<i class="fas fa-bread-slice fa-3x services-icons"></i>
+						<div class="services-col">
+							<h3 style="color:#202020;">Breakfast</h3>
+							<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt</p>
+						</div>
+					</div>
+					
+					<div class="col-lg-4 col-md-6 col-12 p-2 mb-3">
+						<i class="fas fa-utensils fa-3x services-icons"></i>
+						<div class="services-col">
+							<h3 style="color:#202020;">Lunch</h3>
+							<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt</p>
+						</div>
+					</div>
+					
+					<div class="col-lg-4 col-md-6 col-12 p-2 mb-3">
+						<i class="fas fa-crosshairs fa-3x services-icons"></i>
+						<div class="services-col">
+							<h3 style="color:#202020;">Dinner</h3>
+							<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt</p>
+						</div>
+					</div>
+					
+					<div class="col-lg-4 col-md-6 col-12 p-2 mb-3">
+						<i class="fas fa-music fa-3x services-icons"></i>
+						<div class="services-col">
+							<h3 style="color:#202020;">Parties</h3>
+							<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt</p>
+						</div>
+					</div>
+					
+					<div class="col-lg-4 col-md-6 col-12 p-2 mb-3">
+						<i class="fas fa-calendar-alt fa-3x services-icons"></i>
+						<div class="services-col">
+							<h3 style="color:#202020;">Events</h3>
+							<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores quae porro consequatur aliquam, incidunt</p>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+		<!--Services Section  ends here-->
+		
+		
+		<!--Restaurant section starts here-->
+		<section class="restaurant-section mb-5">
+			<div class="container restaurant-container mb-4">
+				<div class="row restaurant-row">
+					<div class="col-md-12">
+						<h2 class="text-center restaurant-heading mb-4">OUR RESTAURANT</h2>
+					<p class="text-center restaurant-para mb-4">Curabitur aliquet quam id dui posuere blandit. Donec sollicitudin molestie malesuada Pellentesque
+					ipsum id orci porta dapibus. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-12 px-4 mb-4">
+						<p class="mb-3">Grids is a responsive Multipurpose Template. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur aliquet quam id dui posuere blandit. Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
+						<ul class="mb-4">
+							<li class="mb-2"><i class="fas fa-arrow-circle-right restaurant-icons"></i>&nbsp;&nbsp;<span>Lorem ipsum dolor sit amet</span></li>
+							<li class="mb-2"><i class="fas fa-arrow-circle-right restaurant-icons"></i>&nbsp;&nbsp;<span>consectetur adipiscing elit</span></li>
+							<li class="mb-2"><i class="fas fa-arrow-circle-right restaurant-icons"></i>&nbsp;&nbsp;<span>Curabitur aliquet quam id dui</span></li>
+							<li class="mb-2"><i class="fas fa-arrow-circle-right restaurant-icons"></i>&nbsp;&nbsp;<span>Donec sollicitudin molestie malesuada.</span></li>
+						</ul>
+						<a class="btn restaurant-button" href="">Learn more</a>
+					</div>
+					<div class="col-lg-6 col-md-6 col-12">
+						<img class="img-responsive" src="assets/images/about.jpg" alt="about"  />
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--Restaurant section end here-->
+		
+		<!--Footer section starts here-->
+		<footer>
+			<section class="footer-section">
+				<div class="container mb-4">
+					<div class="row">
+						<div class="col-lg-3 col-md-6 col-12 mb-4 px-3">
+							<h5>Our Contact</h5>
+							<address><strong>Bootstrap company Inc</strong><br/>JC Main Road, Near Silnile tower
+							Pin-21542 NewYork US.</address>
+							<p>(123) 456-789 - 1255-12584<br/>email@domainname.com</p>
+						</div>
+						
+						<div class="col-lg-3 col-md-6 col-12 mb-4 px-3">
+							<h5>Quick Links</h5>
+							<ul>
+								<li>Latest Events</li>
+								<li>Terms and conditions</li>
+								<li>Privacy</li>
+								<li>Career</li>
+								<li>Contact Us</li>
+							</ul>
+						</div>
+						
+						<div class="col-lg-3 col-md-6 col-12 mb-4 px-3">
+							<h5>Latest posts</h5>
+							<ul>
+								<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+								<li>Pellentesque et pulvinar enim. Quisque at tempor ligula</li>
+								<li>Natus error sit voluptatem accusantium doloremque</li>
+							</ul>
+						</div>
+						
+						<div class="col-lg-3 col-md-6 col-12 mb-4 px-3">
+							<h5>Recent News</h5>
+							<ul>
+								<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+								<li>Pellentesque et pulvinar enim. Quisque at tempor ligula</li>
+								<li>Natus error sit voluptatem accusantium doloremque</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<section class="footer-sub-section">
+					<div class="container footer-sub-container">
+						<div class="row footer-sub-row">
+							<div class="col-lg-8 col-md-6 col-12">
+								<p>© Company Name 2019 All right reserved. <strong>Free Bootstrap Template </strong> by Ahsan_4.com</p>
+							</div>
+							<div class="col-lg-4 col-md-6 col-12">
+								<ul class="footer-icons">
+								<li><a href="#"><i class="fab fa-google"></i></a></li>
+								<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+								<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+								<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+								<li><a href="https://www.facebook.com/ahsanjawed.4"><i class="fab fa-facebook-f"></i></a></li>
+							</ul>
+							</div>
+						</div>
+					</div>
+				<section>
+			</section>
+		</footer>
+		<!--Footer section ends here-->
+		
+		<!-- Script start here -->
+		<script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+		<script src="assets/js/popper.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		<!-- <script src="assets/js/materialize.min.js"></script> -->
+		<script src="assets/js/font-awesome.js"></script>
+		<script src="assets/js/jquery.flexslider-min.js" ></script>
+		<script src="assets/js/daisy.min.js"></script>
+		<script src="assets/js/spice-restaurant-free-website-template.js"></script>
+		<!-- Script end here -->
+	</body>
+</html>
